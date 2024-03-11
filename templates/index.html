@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>My App</title>
+    </head>
+    <body>
+        <h1>My Lovely App</h1>
+        <p>Basic Links:</p>
+        {% for link in basic_links %}
+            <a href="{{link}}">{{link}}</a>
+            <br>
+        {% endfor %}
+
+        <p>Verified Links:</p>
+        {% for link in links_verified %}
+            <a href="{{link}}">{{link}}</a>
+            <br>
+        {% endfor %}
+    </body>
+</html>
